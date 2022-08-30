@@ -6,7 +6,7 @@ public class Course {
     private String instructor;
     private String courseName;
     private int offeredCredits;
-    private ArrayList<Student> studentList;
+//    private ArrayList<Student> studentList;
 
     public Course(String instructor, String courseName, int offeredCredits) {
         this.instructor = instructor;
