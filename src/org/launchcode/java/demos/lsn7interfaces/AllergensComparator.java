@@ -4,11 +4,7 @@ import java.util.Comparator;
 
 public class AllergensComparator implements Comparator<Cone> {
     @Override
-    public int compare(Cone a1, Cone a2) {
-        if (a1.getAllergens().contains("none")) {
-            return 1;
-        } else {
-            return 0;
-        }
+    public int compare(Cone cone1, Cone cone2) {
+        return 0;
     }
 }

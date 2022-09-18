@@ -7,9 +7,11 @@ public class Main {
         Case menu = new Case();
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
+        ArrayList<Topping> toppings = menu.getToppings();
         flavors.sort(new FlavorComparator());
         cones.sort(new ConeComparator());
         cones.sort(new AllergensComparator());
+        toppings.sort(new ToppingComparator());
 
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name'
         //  field.
@@ -25,6 +27,9 @@ public class Main {
         for (Cone cone : cones) System.out.println(cone.getName() + ": $" + cone.getCost());
 
         System.out.println("\nAllergens");
-        for (Flavor flavor : flavors) System.out.println(cone.getAllergens());
+        for (Cone cone : cones) System.out.println(cone.getAllergens());
+
+        System.out.println("\nToppings");
+        for (Topping topping : toppings) System.out.println(topping.getName());
     }
 }
